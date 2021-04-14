@@ -12,12 +12,12 @@ Made as a personal project to gather and organize concepts for learning.
 
 0. ## **[Common properties](#0-fundamentals)**
     + 0.1 **[🟢 Font, text & list properties](#01-font-text--list-properties)**
-    + 0.2 **[🟢 Background](#02-consolelog)**
-    + 0.3 **[🟢 Margin & padding (Box model)](#03-variables)**
-    + 0.4 **[🟢 Positioning](#04-variable-declarations---const--let--var)**
-    + 0.5 **[🟢 Border](#05-operators-assignment--comparison--logical--unary)**
-    + 0.6 **[🟢 Height & width](#06--vs--vs--assignment--equality)**
-    + 0.7 **[🟢 Float](#07-typeof-operator)**
+    + 0.2 **[🟢 Background](#02-background)**
+    + 0.3 **[🟢 Margin & padding (Box model)](#03-margin--padding-box-model)**
+    + 0.4 **[🟢 Positioning](#04-positioning)**
+    + 0.5 **[🟢 Border](#05-border)**
+    + 0.6 **[🟢 Height & width](#06-height--width)**
+    + 0.7 **[🟢 Float](#07-float)**
     + 0.8 **[🟡 Display](#08-display)**
     + 0.9 **[🔴 Flexbox & grid](#09-flexbox--grid)**
  
@@ -93,7 +93,7 @@ Made as a personal project to gather and organize concepts for learning.
 
 **[⬆ Back to Top](#common-properties)**
 
-## Background
+## 0.2 Background
 
 `background` - The background property is a shorthand property for other properties:
 
@@ -129,7 +129,7 @@ body {
 **[⬆ Back to Top](#common-properties)**
 
 
-## Margin & padding (Box model)
+## 0.3 Margin & padding (Box model)
 
 ![](https://zellwk.com/images/2013/05/box-model.jpg)
 
@@ -149,7 +149,7 @@ div {
 **[⬆ Back to Top](#common-properties)**
 
 
-## Positioning
+## 0.4 Positioning
 
 > ![](https://www.webideasole.com/wp-content/uploads/2019/02/css_positions-1024x349.png)
 > Static, relative & absolute
@@ -175,7 +175,7 @@ div {
 **[⬆ Back to Top](#common-properties)**
 
 
-## Border
+## 0.5 Border
 
 ![](https://s3.amazonaws.com/webucator-how-tos/2304.png)
 
@@ -200,7 +200,9 @@ The border property is a shorthand property for:
 
 
 
-## Height & width
+## 0.6 Height & width
+
+![](https://blogs.igalia.com/mrego/files/2018/08/percent-definite-size.svg)
 
 `width` & `height` - px | %
 
@@ -218,7 +220,7 @@ img {
 **[⬆ Back to Top](#common-properties)**
 
 
-## Float
+## 0.7 Float
 
 ![](https://cdn-images-1.medium.com/fit/t/1600/480/1*CFwJ6lMQMOi4Oy7L8Mn17g.png)
 
