@@ -69,6 +69,8 @@ The goal of a reset stylesheet is to reduce browser inconsistencies in things li
 
 📜 - https://meyerweb.com/eric/tools/css/reset/
 
+**[⬆ Back to Top](#common-properties)**
+
 
 ## 0.1 Font & text properties
 
@@ -307,6 +309,22 @@ div {
 
 **[⬆ Back to Top](#common-properties)**
 
+---
 
+# 1 Flexbox
+
+📜 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+```css
+display: flex;
+```
+
+![](https://darekkay.com/assets/images/covers/flexbox-cheatsheet.png)
 
 ---
+
+The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on.
+
+
+
+**[⬆ Back to Top](#common-properties)**
