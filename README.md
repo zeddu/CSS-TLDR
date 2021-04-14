@@ -11,15 +11,15 @@ Made as a personal project to gather and organize concepts for learning.
 ## Table of Contents
 
 0. ## **[Common properties](#0-fundamentals)**
-    + 0.1 **[🟢 Font, text & list properties](#01-font-text--list-properties)**
+    + 0.1 **[🟢 Font & text properties](#01-font--text-properties)**
     + 0.2 **[🟢 Background](#02-background)**
     + 0.3 **[🟢 Margin & padding (Box model)](#03-margin--padding-box-model)**
     + 0.4 **[🟢 Positioning](#04-positioning)**
     + 0.5 **[🟢 Border](#05-border)**
     + 0.6 **[🟢 Height & width](#06-height--width)**
-    + 0.7 **[🟢 Float](#07-float)**
-    + 0.8 **[🟡 Display](#08-display)**
-    + 0.9 **[🔴 Flexbox & grid](#09-flexbox--grid)**
+    + 0.7 **[🟢 Columns](#07-Columns)**
+    + 0.8 **[🟡 Float](#08-float)**
+    + 0.9 **[🔴 Display](#09-display)**
  
  
  1. ## **[Flexbox](#1-Strings)**
@@ -65,7 +65,7 @@ Made as a personal project to gather and organize concepts for learning.
 
 ![](https://www.dummies.com/wp-content/uploads/221806.image0.jpg)
 
-## 0.1 Font, text & list properties
+## 0.1 Font & text properties
 
 `color` - #RRGGBB (Red, Green, Blue hex values)
 
@@ -95,6 +95,10 @@ Made as a personal project to gather and organize concepts for learning.
 
 ## 0.2 Background
 
+📜 - https://bitsofco.de/the-background-properties/
+
+---
+
 `background` - The background property is a shorthand property for other properties:
 
 ```css
@@ -120,9 +124,11 @@ body {
 
 `background-attachment` - scroll | fixed | local | initial | inherit
 
-![](https://css-tricks.com/wp-content/uploads/2015/02/cover-and-contain.jpg)
+---
 
-![](https://bitsofco.de/content/images/2016/06/repeat.png)
+
+
+![](https://css-tricks.com/wp-content/uploads/2015/02/cover-and-contain.jpg)
 
 
 
@@ -220,20 +226,52 @@ img {
 **[⬆ Back to Top](#common-properties)**
 
 
-## 0.7 Float
+## 0.7 Columns
 
-![](https://cdn-images-1.medium.com/fit/t/1600/480/1*CFwJ6lMQMOi4Oy7L8Mn17g.png)
+`columns` - auto | column-width column-count | initial | inherit
 
-`float` - none | left | right | initial | inherit
+![](https://ishadeed.com/assets/uncommon-css/column-rule.png)
+
+---
+
+The columns property is a shorthand property for:
+
+- column-width
+
+- column-count
+
+The column-gap property specifies the gap between the columns.
+
+```cs
+div {
+  column-gap: 40px;
+}
+```
+
 
 **[⬆ Back to Top](#common-properties)**
 
 
-## 0.8 Display
+## 0.8 Float
+
+`float` - none | left | right | initial | inherit
+
+![](https://cdn-images-1.medium.com/fit/t/1600/480/1*CFwJ6lMQMOi4Oy7L8Mn17g.png)
+
+
+
+**[⬆ Back to Top](#common-properties)**
+
+
+## 0.9 Display
+
+`display` - none | inline | block | inline-block | flex | grid
 
 ![](https://lh3.googleusercontent.com/proxy/8lKSOEuv4rfXhi2bsgF2N_uSnhyKWItzVwcZDEji4NiDTZ-nX3OAgdg6g6dz_k7odYqt-TnJArJ-abIT0t3Lsw32Myq97VFzJrJZsGRp5Nifz6oQJmd0qZ-KRzhEiKafidTJtPJ_ZjpLDxxgXAhegrvRSfAi)
 
-`display` - none | inline | block | inline-block | flex | grid
+![](https://miro.medium.com/max/871/1*kI78qZQjw_ax1kJo4lPOcw.png)
+
+
 
 ```css
 div {
@@ -248,10 +286,6 @@ div {
 
 **[⬆ Back to Top](#common-properties)**
 
-
-## 0.9 Flexbox & grid
-
-**[⬆ Back to Top](#common-properties)**
 
 
 ---
