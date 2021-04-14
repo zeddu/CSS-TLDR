@@ -22,7 +22,7 @@ Made as a personal project to gather and organize concepts for learning.
     + 0.9 **[🔴 Display](#09-display)**
  
  
- 1. ## **[Flexbox](#1-Strings)**
+ 1. ## **[Flexbox](#1-flexbox)**
     + 1.1 **[🟢 length / charAt / charCodeAt](#11-length--charat--charcodeat)**
     + 1.2 **[🟢 concat / split / repeat](#12-concat--split--repeat)**
     + 1.3 **[🟢 search / replace](#13-search--replace)**
@@ -309,22 +309,202 @@ div {
 
 **[⬆ Back to Top](#common-properties)**
 
----
 
 # 1 Flexbox
 
 📜 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 ```css
+.container {
 display: flex;
+}
 ```
 
 ![](https://darekkay.com/assets/images/covers/flexbox-cheatsheet.png)
 
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.1 Basics & terminology
+
+Since `flexbox` is a whole module and not a single property, it involves a lot of things including its whole set of properties. Some of them are meant to be set on the container (parent element, known as “flex container”) whereas the others are meant to be set on the children (said “flex items”).
+
+![](https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg)
+
 ---
 
-The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on.
+- main axis – The main axis of a flex container is the primary axis along which flex items are laid out. Beware, it is not necessarily horizontal; it depends on the flex-direction property (see below).
+
+- main-start | main-end – The flex items are placed within the container starting from main-start and going to main-end.
+
+- main size – A flex item’s width or height, whichever is in the main dimension, is the item’s main size. The flex item’s main size property is either the ‘width’ or ‘height’ property, whichever is in the main dimension.
+
+- cross axis – The axis perpendicular to the main axis is called the cross axis. Its direction depends on the main axis direction.
+
+- cross-start | cross-end – Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.
+
+- cross size – The width or height of a flex item, whichever is in the cross dimension, is the item’s cross size. The cross size property is whichever of ‘width’ or ‘height’ that is in the cross dimension.
+
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.1 Flex-direction
+
+ `flex-direction` - row | row-reverse | column | column-reverse
+
+![](https://samanthaming.gumlet.io/flexbox30/9-flex-direction.jpg.gz)
+
+**[⬆ Back to Top](#flexbox)**
 
 
 
-**[⬆ Back to Top](#common-properties)**
+## 1.2 Justify-content
+
+`justify-content` - flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right
+
+This defines the alignment along the main axis.
+
+![](https://miro.medium.com/max/434/1*iigDGiNFBOUVJQ_07C1B2g.png)
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.2 Align-items
+
+`align-items` - stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end
+
+This defines the default behavior for how flex items are laid out along the cross axis on the current line.
+
+![](https://notes.anjagusev.com/static/8a7afe991a11023398a91abddd2567dc/b9e4f/ScreenShot2019-03-22at174821.png)
+
+**[⬆ Back to Top](#flexbox)**
+
+## 1.3 Flex-wrap
+
+`flex-wrap` - nowrap | wrap | wrap-reverse
+
+- `nowrap` (default) - all flex items will be on one line
+
+- `wrap` - flex items will wrap onto multiple lines, from top to bottom.
+
+- `wrap-reverse` - flex items will wrap onto multiple lines from bottom to top.
+
+By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
+
+![](https://samanthaming.gumlet.io/flexbox30/10-flex-wrap.jpg.gz)
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.3 Flex-flow
+
+`flex-flow` - row | row-reverse | column | column-reverse | wrap | nowrap | wrap-reverse
+
+This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1592610517892/2LRbRRnu_.png)
+
+![](https://miro.medium.com/max/3160/1*xAPNrU9sKijsJnMJOTyUBA.png)
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.4 Align-content
+
+`align-content` - flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline
+
+This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+
+![](https://on.notist.cloud/slides/deck501/large-30.png)
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.4 Order
+
+`order` - number
+
+```css
+.item {
+  order: 5; /* default is 0 */
+}
+```
+
+By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
+
+![](https://coursesweb.net/addons/css/flexbox-order.jpg)
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.5 Flex-grow
+
+`flex-grow` - number (this is a relational value)
+
+This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+
+If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8WgTeGfN81LxapVOnt9ufYrzGowZ9PeVmaw&usqp=CAU)
+
+![](https://ishadeed.com/assets/flex-css/flex-grow-1.png)
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.5 Flex-shrink
+
+`flex-shrink` - number (relational value). Negative numbers are invalid.
+
+This defines the ability for a flex item to shrink if necessary.
+
+![](https://samanthaming.gumlet.io/flexbox30/23-flex-shrink.jpg.gz)
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.6 Flex-basis
+
+`flex-basis` - 0 | auto
+
+This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means “look at my width or height property”.
+
+![](https://www.w3.org/TR/css-flexbox-1/images/rel-vs-abs-flex.svg)
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.7 Align-self
+
+`align-self` - auto | flex-start | flex-end | center | baseline | stretch
+
+This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
+
+![](https://miro.medium.com/max/1072/1*uUfr2oc8xRg4S1YWnRiSDQ.png)
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.8 Flex
+
+`flex` (Default: 0 1 auto) - none | flex-grow flex-shrink flex-basis
+
+This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. The default is 0 1 auto, but if you set it with a single number value, it’s like 1 0.
+
+It is recommended that you use this shorthand property rather than set the individual properties. The shorthand sets the other values intelligently.
+
+![](https://samanthaming.gumlet.io/flexbox30/27-flex.jpg.gz?format=auto)
+
+**[⬆ Back to Top](#flexbox)**
+
+
+## 1.9 Flex overview
+
+
+![](https://samanthaming.gumlet.io/flexbox30/30-flexbox-cheatsheet.jpg.gz?format=auto)
+
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--A8IfWktx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/prq36s69xfan04a3ah28.png)
+
+**[⬆ Back to Top](#flexbox)**
