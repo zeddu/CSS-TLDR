@@ -46,23 +46,16 @@ Made as a personal project to gather and organize concepts for learning.
     + 2.5 **[🟢 Grid items properties](#25-grid-items-properties)**
     + 2.6 **[🟢 Grid items alignment properties](#26-grid-items-alignment-properties)**
     + 2.7 **[🟢 Fluid columns snippet](#27-fluid-columns-snippet)**
-    + 2.8 **[🟢 z](#28-break-vs-continue-vs-return-conditionals)**
-    + 2.9 **[🟢 z](#29-switch-statements-conditionals)**
+    + 2.8 **[🟢 Layouts](#28-layouts)**
+    + 2.9 **[🟢 Grid overview](#29-grid-overview)**
 
 
-3. ## **[Templates](#3-Functions)**
-    + 3.1 **[🟢 Higher order functions & first class citizenship](#31-higher-order-functions---first-class-citizenship)**
-    + 3.2 **[🟢 Function declarations (traditional functions)](#32-function-declarations-traditional-functions)**
-    + 3.3 **[🟢 Function expressions](#33-function-expressions)**
-    + 3.4 **[🟢 Arrow functions & concise arrow functions](#34-arrow-functions--concise-arrow-functions)**
-    + 3.5 **[🟢 Anonymous functions](#35-anonymous-functions)**
-    + 3.6 **[🟡 Immediately invoked function expressions (IIFE)](#36-immediately-invoked-function-expressions-iife)**
-    + 3.7 **[🟡 Recursive functions](#37-recursive-functions)**
-    + 3.8 **[🔴 Callback functions](#38-callback-functions)**
-    + 3.9 **[🔴 Asynchronous functions](#39-asynchronous-functions)**
+3. ## **[Layouts & templates](#3-layouts--templates)**
+
 
 **[⬆ Back to Top](#table-of-contents)**
 
+---
 
 # 0 Common properties 
 
@@ -861,4 +854,40 @@ The first value sets align-self, the second value justify-self. If the second va
 
 **[⬆ Back to Top](#grid)**
 
-![](https://cdn-media-1.freecodecamp.org/images/Bji3J37rICTz6Njcts4IL6ejCB-Z4Usg6DkH)
+## 2.8 Layouts
+
+![](https://cdn.codecoda.com/themes/user/site/default/asset/img/blog/CSS-layout-1.png)
+
+---
+
+![](https://cdn.codecoda.com/themes/user/site/default/asset/img/blog/CSS-layout-4.png)
+
+**[⬆ Back to Top](#grid)**
+
+
+
+
+## 2.9 Grid overview
+
+📜 - https://grid.malven.co/
+
+📜 - https://flexbox.malven.co/
+
+![](https://devopedia.org/images/article/179/2142.1559055827.jpg)
+
+**[⬆ Back to Top](#grid)**
+
+
+# 3 Layouts & templates
+
+📜 - https://codepen.io/chriscoyier/pen/xBmYJN
+
+
+![](https://cdn.mos.cms.futurecdn.net/7vpUPMSbPfhxiUNYj5XnE6.jpg)
+
+![](https://masteringionic.com/perch/resources/tutorials/ionic-css-grid-non-desktop-views.png)
+
+![](https://i.ytimg.com/vi/68O6eOGAGqA/maxresdefault.jpg)
+
+
+**[⬆ Back to Top](#templates)**
