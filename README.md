@@ -18,8 +18,8 @@ Made as a personal project to gather and organize concepts for learning.
     + 0.5 **[🟢 Border](#05-operators-assignment--comparison--logical--unary)**
     + 0.6 **[🟢 Height & width](#06--vs--vs--assignment--equality)**
     + 0.7 **[🟢 Float](#07-typeof-operator)**
-    + 0.8 **[🟡 Display](#08-type-conversion)**
-    + 0.9 **[🔴 Flexbox & grid](#09-template-literals---name)**
+    + 0.8 **[🟡 Display](#08-display)**
+    + 0.9 **[🔴 Flexbox & grid](#09-flexbox--grid)**
  
  
  1. ## **[Flexbox](#1-Strings)**
@@ -61,18 +61,21 @@ Made as a personal project to gather and organize concepts for learning.
 
 # 0 Common properties 
 
+![](https://i.imgur.com/iqcONqI.png)
+
+![](https://www.dummies.com/wp-content/uploads/221806.image0.jpg)
 
 ## 0.1 Font, text & list properties
 
 `color` - #RRGGBB (Red, Green, Blue hex values)
 
-`font-size` - 
+`font-size` - px | em | rem
 
 `font-style` - 	normal | italic | oblique
 
 `font-weight` - normal | bold | 100 | 400 | 700
 
-`font-family` - 
+`font-family` - "Roboto", sans-serif
 
 `text-align` - 	left | right | center | justify
 
@@ -80,13 +83,15 @@ Made as a personal project to gather and organize concepts for learning.
 
 `text-transformation` - none | capitalize | uppercase | lowercase
 
-`list-style` -
+`list-style` - none | list-style-type || list-style-position || list-style-image
 
-`line-height` -
+`line-height` - px etc.
 
-`letter-spacing` - 
+`letter-spacing` - px etc.
 
-`cursor` - 
+`cursor` - pointer | grabbing | copy | crosshair | many more..
+
+**[⬆ Back to Top](#common-properties)**
 
 ## Background
 
@@ -99,8 +104,6 @@ body {
 
 ```
 
----
-
 `background-color` - #RRGGBB (Red, Green, Blue hex values)
 
 `background-image` - url("[image url]")
@@ -109,23 +112,30 @@ body {
 
 `background-position` - left | center | right | top | center | bottom
 
-background-size
+`background-size` - auto | contain | cover | % | px
 
-background-origin
+`background-origin` - padding-box | border-box | content-box | initial | inherit
 
-background-clip
+`background-clip` - padding-box | border-box | content-box | initial | inherit
 
-background-attachment
+`background-attachment` - scroll | fixed | local | initial | inherit
 
+![](https://css-tricks.com/wp-content/uploads/2015/02/cover-and-contain.jpg)
+
+![](https://bitsofco.de/content/images/2016/06/repeat.png)
+
+
+
+**[⬆ Back to Top](#common-properties)**
 
 
 ## Margin & padding (Box model)
 
 ![](https://zellwk.com/images/2013/05/box-model.jpg)
 
-`margin` - 
+`margin` - px | em | rem | % | auto | initial | inherit
 
-`padding` - 
+`padding` - px | em | rem | % | auto | initial | inherit
 
 ```css
 div {
@@ -135,6 +145,9 @@ div {
     margin-left: 10px
 }
 ```
+
+**[⬆ Back to Top](#common-properties)**
+
 
 ## Positioning
 
@@ -159,7 +172,12 @@ div {
 
 - inherit - Inherits this property from its parent element.
 
+**[⬆ Back to Top](#common-properties)**
+
+
 ## Border
+
+![](https://s3.amazonaws.com/webucator-how-tos/2304.png)
 
 `border` - 
 
@@ -178,15 +196,17 @@ The border property is a shorthand property for:
 
 `border-color`
 
-
+**[⬆ Back to Top](#common-properties)**
 
 
 
 ## Height & width
 
-`height` & `width` - 
+`width` & `height` - px | %
 
-`top` `right` `bottom` `left` - 
+`min-width` & `min-height` - Defines the minimum width/height of an element
+
+`top` `right` `bottom` `left` - px | %
 
 ```css
 img {
@@ -195,23 +215,41 @@ img {
 }
 ```
 
+**[⬆ Back to Top](#common-properties)**
+
+
 ## Float
 
+![](https://cdn-images-1.medium.com/fit/t/1600/480/1*CFwJ6lMQMOi4Oy7L8Mn17g.png)
 
-`float` - left right none
+`float` - none | left | right | initial | inherit
 
-
-
-
-## Display
-
-`display` - 
+**[⬆ Back to Top](#common-properties)**
 
 
+## 0.8 Display
+
+![](https://lh3.googleusercontent.com/proxy/8lKSOEuv4rfXhi2bsgF2N_uSnhyKWItzVwcZDEji4NiDTZ-nX3OAgdg6g6dz_k7odYqt-TnJArJ-abIT0t3Lsw32Myq97VFzJrJZsGRp5Nifz6oQJmd0qZ-KRzhEiKafidTJtPJ_ZjpLDxxgXAhegrvRSfAi)
+
+`display` - none | inline | block | inline-block | flex | grid
+
+```css
+div {
+    display: block;
+    display: inline-block;
+    display: inline;
+    display: flex;
+    display: grid;
+    display: none;
+}
+```
+
+**[⬆ Back to Top](#common-properties)**
 
 
+## 0.9 Flexbox & grid
 
-
+**[⬆ Back to Top](#common-properties)**
 
 
 ---
