@@ -47,10 +47,7 @@ Made as a personal project to gather and organize concepts for learning.
     + 2.6 **[🟢 Grid items alignment properties](#26-grid-items-alignment-properties)**
     + 2.7 **[🟢 Fluid columns snippet](#27-fluid-columns-snippet)**
     + 2.8 **[🟢 Layouts](#28-layouts)**
-    + 2.9 **[🟢 Grid overview](#29-grid-overview)**
-
-
-3. ## **[Layouts & templates](#3-layouts--templates)**
+    + 2.9 **[🟢 Grid overview & layouts](#29-grid-overview--layouts)**
 
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -867,20 +864,20 @@ The first value sets align-self, the second value justify-self. If the second va
 
 
 
-## 2.9 Grid overview
+## 2.9 Grid overview & layouts
 
 📜 - https://grid.malven.co/
 
 📜 - https://flexbox.malven.co/
 
+📜 - https://codepen.io/chriscoyier/pen/xBmYJN
+
 ![](https://devopedia.org/images/article/179/2142.1559055827.jpg)
 
-**[⬆ Back to Top](#grid)**
+---
 
 
-# 3 Layouts & templates
 
-📜 - https://codepen.io/chriscoyier/pen/xBmYJN
 
 
 ![](https://cdn.mos.cms.futurecdn.net/7vpUPMSbPfhxiUNYj5XnE6.jpg)
