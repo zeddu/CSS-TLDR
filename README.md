@@ -11,7 +11,7 @@ Made as a personal project to gather and organize concepts for learning.
 ## Table of Contents
 
 0. ## **[Common properties](#0-fundamentals)**
-    + 0.1 **[🟢 Font, text & list properties](#01-font-text---list-properties)**
+    + 0.1 **[🟢 Font, text & list properties](#01-font-text--list-properties)**
     + 0.2 **[🟢 Background](#02-consolelog)**
     + 0.3 **[🟢 Margin & padding (Box model)](#03-variables)**
     + 0.4 **[🟢 Positioning](#04-variable-declarations---const--let--var)**
