@@ -10,7 +10,7 @@ Made as a personal project to gather and organize concepts for learning.
 
 ## Table of Contents
 
-0. ## **[Common properties](#0-fundamentals)**
+0. ## **[Common properties](#0-common-properties)**
     + 0.1 **[🟢 Font & text properties](#01-font--text-properties)**
     + 0.2 **[🟢 Background](#02-background)**
     + 0.3 **[🟢 Margin & padding (Box model)](#03-margin--padding-box-model)**
@@ -63,7 +63,12 @@ Made as a personal project to gather and organize concepts for learning.
 
 ![](https://i.imgur.com/iqcONqI.png)
 
-![](https://www.dummies.com/wp-content/uploads/221806.image0.jpg)
+---
+
+The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on.
+
+📜 - https://meyerweb.com/eric/tools/css/reset/
+
 
 ## 0.1 Font & text properties
 
@@ -256,7 +261,23 @@ div {
 
 `float` - none | left | right | initial | inherit
 
+`clear` - none | left | right | both | initial | inherit
+
 ![](https://cdn-images-1.medium.com/fit/t/1600/480/1*CFwJ6lMQMOi4Oy7L8Mn17g.png)
+
+---
+
+- The CSS `float` property specifies how an element should float.
+
+- The CSS `clear` property specifies what elements can float beside the cleared element and on which side.
+
+    - none - Allows floating elements on both sides. This is default
+    - left - No floating elements allowed on the left side
+    - right- No floating elements allowed on the right side
+    - both - No floating elements allowed on either the left or the right side
+    - inherit - The element inherits the clear value of its parent
+
+📜 - https://www.w3schools.com/howto/howto_css_clearfix.asp
 
 
 
