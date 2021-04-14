@@ -507,4 +507,357 @@ It is recommended that you use this shorthand property rather than set the indiv
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--A8IfWktx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/prq36s69xfan04a3ah28.png)
 
+![](https://miro.medium.com/max/871/1*kI78qZQjw_ax1kJo4lPOcw.png)
+
 **[⬆ Back to Top](#flexbox)**
+
+
+# 2 Grid
+
+📜 - https://css-tricks.com/snippets/css/complete-guide-grid
+
+The element on which display: grid is applied. It’s the direct parent of all the grid items. In this example container is the grid container.
+
+```css
+.container {
+display: grid;
+}
+```
+![](https://codingthesmartway.com/wp-content/uploads/2017/12/01_CSS_Grid_Overview.png)
+
+![](https://www.cssgridplayground.com/twitter-card.png)
+
+
+**[⬆ Back to Top](#grid)**
+
+
+## 2.1 Grid display
+
+`display` - grid | inline-grid
+
+Defines the element as a grid container and establishes a new grid formatting context for its contents.
+
+
+![](https://mlsqcqtlfv1d.i.optimole.com/K2Tg0JY-GoqWFsJe/w:828/h:359/q:auto/https://sbsharma.com/wp-content/uploads/2020/05/inline-vs-grid-css-grid.png)
+
+
+
+
+**[⬆ Back to Top](#grid)**
+
+## 2.2 Grid container properties
+
+
+`grid-template-columns`
+
+`grid-template-rows`
+
+Defines the columns and rows of the grid with a space-separated list of values. The values represent the track size, and the space between them represents the grid line.
+
+```css
+.container {
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 1fr auto;
+}
+```
+
+---
+
+`grid-template-areas`
+
+Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+```
+
+
+---
+
+`grid-template`
+
+A shorthand for setting grid-template-rows, grid-template-columns, and grid-template-areas in a single declaration.
+
+```css
+.container {
+  grid-template:
+    [row1-start] "header header header" 25px [row1-end]
+    [row2-start] "footer footer footer" 25px [row2-end]
+    / auto 50px auto;
+}
+```
+
+
+---
+
+`grid-auto-columns`
+
+`grid-auto-rows`
+
+Specifies the size of any auto-generated grid tracks (aka implicit grid tracks). Implicit tracks get created when there are more grid items than cells in the grid or when a grid item is placed outside of the explicit grid.
+
+```css
+.container {
+  grid-auto-columns: 60px;
+}
+```
+
+---
+
+`grid-auto-flow`
+
+If you have grid items that you don’t explicitly place on the grid, the auto-placement algorithm kicks in to automatically place the items. This property controls how the auto-placement algorithm works.
+
+```css
+.container {
+  grid-auto-flow: row | column | row dense | column dense;
+}
+```
+
+---
+
+`grid`
+
+A shorthand for setting all of the following properties in a single declaration: grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow 
+
+```css
+.container {
+  grid: 100px 300px / 3fr 1fr;
+}
+
+.container {
+  grid-template-rows: 100px 300px;
+  grid-template-columns: 3fr 1fr;
+}
+```
+
+```css
+.container {
+  grid: auto-flow / 200px 1fr;
+}
+
+.container {
+  grid-auto-flow: row;
+  grid-template-columns: 200px 1fr;
+}
+```
+
+---
+
+**[⬆ Back to Top](#grid)**
+
+
+
+## 2.3 Grid gap properties
+
+
+`column-gap`
+
+`row-gap`
+
+`grid-column-gap`
+
+`grid-row-gap`
+
+Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the columns/rows.
+
+```css
+.container {
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px; 
+  column-gap: 10px;
+  row-gap: 15px;
+}
+```
+
+---
+
+`gap`
+
+`grid-gap`
+
+A shorthand for row-gap and column-gap
+
+```css
+.container {
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px; 
+  gap: 15px 10px;
+}
+```
+
+
+**[⬆ Back to Top](#grid)**
+
+## 2.4 Grid alignment properties
+
+ 
+`justify-items` - start | end | center | stretch
+
+Aligns grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis). This value applies to all grid items inside the container.
+
+---
+
+`align-items` - start | end | center | stretch
+
+Aligns grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis). This value applies to all grid items inside the container.
+
+---
+
+`place-items` - align-items justify-items
+
+place-items sets both the align-items and justify-items properties in a single declaration.
+
+---
+
+`justify-content` - start | end | center | stretch | space-around | space-between | space-evenly
+
+This property aligns the grid along the inline (row) axis (as opposed to align-content which aligns the grid along the block (column) axis).
+
+---
+
+
+`align-content` - start | end | center | stretch | space-around | space-between | space-evenly
+
+This property aligns the grid along the block (column) axis (as opposed to justify-content which aligns the grid along the inline (row) axis).
+
+---
+
+`place-content` - align-content justify-content
+
+place-content sets both the align-content and justify-content properties in a single declaration.
+
+
+**[⬆ Back to Top](#grid)**
+
+## 2.5 Grid items properties
+
+> Note: float, display: inline-block, display: table-cell, vertical-align and column-* properties have no effect on a grid item.
+
+
+`grid-column-start`
+`grid-column-end`
+`grid-row-start`
+`grid-row-end`
+
+Determines a grid item’s location within the grid by referring to specific grid lines. grid-column-start/grid-row-start is the line where the item begins, and grid-column-end/grid-row-end is the line where the item ends.
+
+```css
+.item-a {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+}
+```
+
+---
+
+`grid-column`
+
+`grid-row`
+
+Shorthand for grid-column-start + grid-column-end, and grid-row-start + grid-row-end, respectively.
+
+```css
+.item-c {
+  grid-column: 3 / span 2;
+  grid-row: third-line / 4;
+}
+```
+
+---
+
+`grid-area`
+
+Gives an item a name so that it can be referenced by a template created with the grid-template-areas property. Alternatively, this property can be used as an even shorter shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end.
+
+```css
+.item-d {
+  grid-area: header;
+}
+```
+
+
+
+
+**[⬆ Back to Top](#grid)**
+
+## 2.6 Grid items alignment properties
+
+
+`justify-self` - tart | end | center | stretch
+
+Aligns a grid item inside a cell along the inline (row) axis (as opposed to align-self which aligns along the block (column) axis). This value applies to a grid item inside a single cell.
+
+```css
+.item-a {
+    justify-self: start;
+    justify-self: center;
+    justify-self: end;
+}
+```
+
+---
+
+`align-self` - start | end | center | stretch
+
+Aligns a grid item inside a cell along the block (column) axis (as opposed to justify-self which aligns along the inline (row) axis). This value applies to the content inside a single grid item.
+
+```css
+.item-a {
+  align-self: start;
+}
+```
+
+---
+
+`place-self` - align-self justify-self
+
+place-self sets both the align-self and justify-self properties in a single declaration.
+
+The first value sets align-self, the second value justify-self. If the second value is omitted, the first value is assigned to both properties.
+
+```css
+.item-a {
+  place-self: center;
+}
+```
+
+**[⬆ Back to Top](#grid)**
+
+
+
+## 2.7 Fluid columns snippet
+
+```css
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* This is better for small screens, once min() is better supported */
+  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+  grid-gap: 1rem;
+  /* This is the standardized property now, but has slightly less support */
+  /* gap: 1rem */
+}
+```
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="chriscoyier" data-slug-hash="xBmYJN" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="That Grid Thing Everybody Loves 'Cause It's Awesome">
+  <span>See the Pen <a href="https://codepen.io/chriscoyier/pen/xBmYJN">
+  That Grid Thing Everybody Loves 'Cause It's Awesome</a> by Chris Coyier  (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+
+**[⬆ Back to Top](#grid)**
+
+![](https://cdn-media-1.freecodecamp.org/images/Bji3J37rICTz6Njcts4IL6ejCB-Z4Usg6DkH)
