@@ -18,31 +18,36 @@ Made as a personal project to gather and organize concepts for learning.
     + 0.5 **[🟢 Border](#05-border)**
     + 0.6 **[🟢 Height & width](#06-height--width)**
     + 0.7 **[🟢 Columns](#07-Columns)**
-    + 0.8 **[🟡 Float](#08-float)**
-    + 0.9 **[🔴 Display](#09-display)**
+    + 0.8 **[🟢 Float](#08-float)**
+    + 0.9 **[🟢 Display](#09-display)**
  
  
  1. ## **[Flexbox](#1-flexbox)**
-    + 1.1 **[🟢 length / charAt / charCodeAt](#11-length--charat--charcodeat)**
-    + 1.2 **[🟢 concat / split / repeat](#12-concat--split--repeat)**
-    + 1.3 **[🟢 search / replace](#13-search--replace)**
-    + 1.4 **[🟢 slice / substring / substr](#14-slice--substring--substr)**
-    + 1.5 **[🟢 toUpperCase / toLowerCase](#15-touppercase--tolowercase)**
-    + 1.6 **[🟢 indexOf / lastIndexOf](#16-indexof--lastindexof)**
-    + 1.7 **[🟢 trim / padStart / padEnd](#17-trim--padstart--padend)**
-    + 1.8 **[🟢 startsWith / endsWith / includes](#18-startswith--endswith--includes)**
-    + 1.9 **[🟡 Chaining methods](#19-chaining-methods)**
+    + 1.1 **[🟢 Basics & terminology](#11-basics--terminology)**
+    + 1.2 **[🟢 Flex-direction](#12-flex-direction)**
+    + 1.3 **[🟢 Justify-content](#13-justify-content)**
+    + 1.4 **[🟢 Align-items](#14-align-items)**
+    + 1.5 **[🟢 Flex-wrap](#15-flex-wrap)**
+    + 1.6 **[🟢 Flex-flow](#16-flex--flow)**
+    + 1.7 **[🟢 Align-content](#17-align-content)**
+    + 1.8 **[🟢 Order](#18-order)**
+    + 1.9 **[🟢 Flex-grow](#19-flex-grow)**
+    + 1.10 **[🟢 Flex-shrink](#110-flex-shrink)**
+    + 1.11 **[🟢 Flex-basis](#111-flex-basis)**
+    + 1.12 **[🟢 Align-self](#112-align-self)**
+    + 1.13 **[🟢 Flex](#113-flex)**
+    + 1.14 **[🟢 Flex overview](#114-flex-overview)**
 
-2. ## **[Grid](#2-control-flow)**
-    + 2.1 **[🟢 For loops (for/for in/for of/forEach/backwards for)](#21-for-loops-forfor-infor-offoreachbackwards-for)**
-    + 2.2 **[🟢 While loops (while & do-while)](#22-while-loops-while--do-while)**
-    + 2.3 **[🟢 If else statement (conditionals)](#23-if-else-statement-conditionals)**
-    + 2.4 **[🟡 Ternary if statements (conditionals)](#24-ternary-if-statements-conditionals)**
-    + 2.5 **[🟢 Return (conditionals)](#25-return-conditionals)**
-    + 2.6 **[🟢 Break (conditionals)](#26-break-conditionals)**
-    + 2.7 **[🟢 Continue (conditionals)](#27-continue-conditionals)**
-    + 2.8 **[🟢 Break vs continue vs return (conditionals)](#28-break-vs-continue-vs-return-conditionals)**
-    + 2.9 **[🟡 Switch statements (conditionals)](#29-switch-statements-conditionals)**
+2. ## **[Grid](#2-grid)**
+    + 2.1 **[🟢 Grid display](#21-grid-display)**
+    + 2.2 **[🟢 Grid container properties](#22-grid-container-properties)**
+    + 2.3 **[🟢 Grid gap properties](#23-grid-gap-properties)**
+    + 2.4 **[🟢 Grid alignment properties](#24-grid-alignment-properties)**
+    + 2.5 **[🟢 Grid items properties](#25-grid-items-properties)**
+    + 2.6 **[🟢 Grid items alignment properties](#26-grid-items-alignment-properties)**
+    + 2.7 **[🟢 Fluid columns snippet](#27-fluid-columns-snippet)**
+    + 2.8 **[🟢 z](#28-break-vs-continue-vs-return-conditionals)**
+    + 2.9 **[🟢 z](#29-switch-statements-conditionals)**
 
 
 3. ## **[Templates](#3-Functions)**
@@ -350,7 +355,7 @@ Since `flexbox` is a whole module and not a single property, it involves a lot o
 **[⬆ Back to Top](#flexbox)**
 
 
-## 1.1 Flex-direction
+## 1.2 Flex-direction
 
  `flex-direction` - row | row-reverse | column | column-reverse
 
@@ -360,7 +365,7 @@ Since `flexbox` is a whole module and not a single property, it involves a lot o
 
 
 
-## 1.2 Justify-content
+## 1.3 Justify-content
 
 `justify-content` - flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right
 
@@ -371,7 +376,7 @@ This defines the alignment along the main axis.
 **[⬆ Back to Top](#flexbox)**
 
 
-## 1.2 Align-items
+## 1.4 Align-items
 
 `align-items` - stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end
 
@@ -381,7 +386,7 @@ This defines the default behavior for how flex items are laid out along the cros
 
 **[⬆ Back to Top](#flexbox)**
 
-## 1.3 Flex-wrap
+## 1.5 Flex-wrap
 
 `flex-wrap` - nowrap | wrap | wrap-reverse
 
@@ -398,7 +403,7 @@ By default, flex items will all try to fit onto one line. You can change that an
 **[⬆ Back to Top](#flexbox)**
 
 
-## 1.3 Flex-flow
+## 1.6 Flex-flow
 
 `flex-flow` - row | row-reverse | column | column-reverse | wrap | nowrap | wrap-reverse
 
@@ -411,7 +416,7 @@ This is a shorthand for the flex-direction and flex-wrap properties, which toget
 **[⬆ Back to Top](#flexbox)**
 
 
-## 1.4 Align-content
+## 1.7 Align-content
 
 `align-content` - flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline
 
@@ -422,7 +427,7 @@ This aligns a flex container’s lines within when there is extra space in the c
 **[⬆ Back to Top](#flexbox)**
 
 
-## 1.4 Order
+## 1.8 Order
 
 `order` - number
 
@@ -439,7 +444,7 @@ By default, flex items are laid out in the source order. However, the order prop
 **[⬆ Back to Top](#flexbox)**
 
 
-## 1.5 Flex-grow
+## 1.9 Flex-grow
 
 `flex-grow` - number (this is a relational value)
 
@@ -454,7 +459,7 @@ If all items have flex-grow set to 1, the remaining space in the container will 
 **[⬆ Back to Top](#flexbox)**
 
 
-## 1.5 Flex-shrink
+## 1.10 Flex-shrink
 
 `flex-shrink` - number (relational value). Negative numbers are invalid.
 
@@ -465,7 +470,7 @@ This defines the ability for a flex item to shrink if necessary.
 **[⬆ Back to Top](#flexbox)**
 
 
-## 1.6 Flex-basis
+## 1.11 Flex-basis
 
 `flex-basis` - 0 | auto
 
@@ -476,7 +481,7 @@ This defines the default size of an element before the remaining space is distri
 **[⬆ Back to Top](#flexbox)**
 
 
-## 1.7 Align-self
+## 1.12 Align-self
 
 `align-self` - auto | flex-start | flex-end | center | baseline | stretch
 
@@ -487,7 +492,7 @@ This allows the default alignment (or the one specified by align-items) to be ov
 **[⬆ Back to Top](#flexbox)**
 
 
-## 1.8 Flex
+## 1.13 Flex
 
 `flex` (Default: 0 1 auto) - none | flex-grow flex-shrink flex-basis
 
@@ -500,7 +505,7 @@ It is recommended that you use this shorthand property rather than set the indiv
 **[⬆ Back to Top](#flexbox)**
 
 
-## 1.9 Flex overview
+## 1.14 Flex overview
 
 
 ![](https://samanthaming.gumlet.io/flexbox30/30-flexbox-cheatsheet.jpg.gz?format=auto)
@@ -838,6 +843,9 @@ The first value sets align-self, the second value justify-self. If the second va
 
 ## 2.7 Fluid columns snippet
 
+📜 - https://codepen.io/chriscoyier/pen/xBmYJN
+
+
 ```css
 .grid {
   display: grid;
@@ -849,13 +857,6 @@ The first value sets align-self, the second value justify-self. If the second va
   /* gap: 1rem */
 }
 ```
-
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="chriscoyier" data-slug-hash="xBmYJN" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="That Grid Thing Everybody Loves 'Cause It's Awesome">
-  <span>See the Pen <a href="https://codepen.io/chriscoyier/pen/xBmYJN">
-  That Grid Thing Everybody Loves 'Cause It's Awesome</a> by Chris Coyier  (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
 **[⬆ Back to Top](#grid)**
