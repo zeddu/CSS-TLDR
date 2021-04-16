@@ -56,13 +56,19 @@ Made as a personal project to gather and organize concepts for learning.
 
 # 0 Common properties 
 
-![](https://i.imgur.com/iqcONqI.png)
-
----
-
-The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on.
 
 📜 - https://meyerweb.com/eric/tools/css/reset/
+
+📜 - https://necolas.github.io/normalize.css/
+
+📜 - https://type-scale.com/
+
+📜 - https://bennettfeely.com/clippy
+
+📜 - https://responsivebreakpoints.com/
+
+📜 - https://svgbackgrounds.com/
+
 
 **[⬆ Back to Top](#common-properties)**
 
