@@ -44,20 +44,26 @@ A list of curated links
 
 ### 0.2 Typography
 
+📜 - https://fonts.google.com/ (Google Fonts)
+
 📜 - https://type-scale.com/ (Typescale)
 
 
 ### 0.3 Logos & images
 
-📜 - https://responsivebreakpoints.com/ (Generate image breakpoints)
+📜 - https://fontawesome.com/ (Fontawesome)
 
 📜 - https://svgbackgrounds.com/ (SVG's)
+
+📜 - https://responsivebreakpoints.com/ (Generate image breakpoints)
+
+
 
 
 
 ### 0.4 Information & guides
 
-📜 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference (CSS Syntax)
+📜 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference (CSS Syntax list)
 
 📜 - https://bitsofco.de/the-background-properties/ (Background properties)
 
@@ -65,16 +71,34 @@ A list of curated links
 
 📜 - https://flexbox.malven.co/ (Flexbox cheat sheet)
 
+📜 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/ (Flexbox guide)
+
+📜 - https://css-tricks.com/snippets/css/complete-guide-grid/ (Grid guide)
+
+📜 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout (MDN Grid basics)
+
+📜 - https://css-tricks.com/collection-interesting-facts-css-grid-layout/ (Interesting Grid facts)
+
+📜 - http://the-echoplex.net/flexyboxes/ (Flex playground & code generator)
+
+📜 - https://www.html5rocks.com/en/tutorials/responsive/picture-element/ (HTML Picture tag)
+
 
 ### 0.5 CSS components & layouts
 
-📜 - https://bennettfeely.com/clippy (Clipping)
+📜 - https://bennettfeely.com/clippy (Clipping tool)
 
 📜 - https://codepen.io/WebDevSimplified/pen/BaNMMdN (CSS Tooltip)
 
 📜 - https://1linelayouts.glitch.me/ (Grid layouts)
 
 📜 - https://codepen.io/chriscoyier/pen/xBmYJN (Fluid grid layout)
+
+📜 - https://philipwalton.github.io/solved-by-flexbox/ (Some layouts)
+
+📜 - https://gridbyexample.com/ (Layouts)
+
+
 
 ---
 
