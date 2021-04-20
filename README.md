@@ -151,6 +151,7 @@ The columns property is a shorthand for: column-width & column-count
 
 ---
 
+**[⬆ Back to Top](#grid)**
 
 ## Flexbox
 
@@ -189,10 +190,11 @@ space-between | space-around;
 
 `flex` - shorthand for grow, shrink, and basis (default: 0 1 auto)
 
-align-self` - overrides alignment set on parent
+`align-self` - overrides alignment set on parent
 
 ---
 
+**[⬆ Back to Top](#grid)**
 
 ## Grid
 
@@ -295,6 +297,8 @@ A shorthand for setting all of the following properties in a single declaration:
 
 --- 
 
+**[⬆ Back to Top](#grid)**
+
 ### Grid item properties - Children (Grid items)
 
 
@@ -340,6 +344,9 @@ Gives an item a name so that it can be referenced by a template created with the
 ```
 
 ---
+
+**[⬆ Back to Top](#grid)**
+
 
 ### Grid alignment properties
 
