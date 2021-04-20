@@ -15,8 +15,9 @@ Made as a personal project to gather and organize concepts for learning.
     + 0.2 **[🟢 Typography](#02-typography)**
     + 0.3 **[🟢 Logos & images](#03-logos--images)**
     + 0.4 **[🟢 CSS components & layouts](#04-css-components--layouts)**
-    + 0.5 **[🟢 Information & guides](#05-information--guides)**
-    + 0.6 **[🟢 Snippets](#06-snippets)**
+    + 0.5 **[🟢 Tools](#05-tools)**
+    + 0.6 **[🟢 Information & guides](#06-information--guides)**
+    + 0.7 **[🟢 Snippets](#07-snippets)**
  
  
  1. ## **[Syntax](#1-syntax)**
@@ -74,7 +75,13 @@ A list of curated links
 📜 - https://gridbyexample.com/ (Layouts)
 
 
-### 0.5 Information & guides
+### 0.5 Tools
+
+
+📜 - https://formspree.io (Formspree forms)
+
+
+### 0.6 Information & guides
 
 📜 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference (CSS Syntax list)
 
@@ -98,7 +105,7 @@ A list of curated links
 
 ---
 
-### 0.6 Snippets
+### 0.7 Snippets
 
 
 ```css
