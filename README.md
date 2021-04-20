@@ -16,6 +16,7 @@ Made as a personal project to gather and organize concepts for learning.
     + 0.3 **[🟢 Logos & images](#03-logos--images)**
     + 0.4 **[🟢 CSS components & layouts](#04-css-components--layouts)**
     + 0.5 **[🟢 Information & guides](#05-information--guides)**
+    + 0.6 **[🟢 Snippets](#06-snippets)**
  
  
  1. ## **[Syntax](#1-syntax)**
@@ -64,7 +65,7 @@ A list of curated links
 
 📜 - https://codepen.io/WebDevSimplified/pen/BaNMMdN (CSS Tooltip)
 
-📜 - https://1linelayouts.glitch.me/ (Grid layouts)
+📜 - https://1linelayouts.glitch.me/ (Grid layouts - Google)
 
 📜 - https://codepen.io/chriscoyier/pen/xBmYJN (Fluid grid layout)
 
@@ -97,7 +98,26 @@ A list of curated links
 
 ---
 
+### 0.6 Snippets
 
+
+```css
+/* Center a div */
+.parent {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+```
+
+
+```css
+/* Whitespace spacing */
+.any {
+  margin: 10vw;
+  padding: 10vw;
+}
+```
 
 **[⬆ Back to Top](#CSS---TLDR)**
 
