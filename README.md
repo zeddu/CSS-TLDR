@@ -14,9 +14,8 @@ Made as a personal project to gather and organize concepts for learning.
     + 0.1 **[🟢 CSS Reset](#01-css-reset)**
     + 0.2 **[🟢 Typography](#02-typography)**
     + 0.3 **[🟢 Logos & images](#03-logos--images)**
-    + 0.4 **[🟢 Information & guides](#04-information--guides)**
-    + 0.5 **[🟢 CSS components & layouts](#05-css-components--layouts)**
-
+    + 0.4 **[🟢 CSS components & layouts](#04-css-components--layouts)**
+    + 0.5 **[🟢 Information & guides](#05-information--guides)**
  
  
  1. ## **[Syntax](#1-syntax)**
@@ -59,9 +58,22 @@ A list of curated links
 
 
 
+### 0.4 CSS components & layouts
+
+📜 - https://bennettfeely.com/clippy (Clipping tool)
+
+📜 - https://codepen.io/WebDevSimplified/pen/BaNMMdN (CSS Tooltip)
+
+📜 - https://1linelayouts.glitch.me/ (Grid layouts)
+
+📜 - https://codepen.io/chriscoyier/pen/xBmYJN (Fluid grid layout)
+
+📜 - https://philipwalton.github.io/solved-by-flexbox/ (Some layouts)
+
+📜 - https://gridbyexample.com/ (Layouts)
 
 
-### 0.4 Information & guides
+### 0.5 Information & guides
 
 📜 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference (CSS Syntax list)
 
@@ -82,23 +94,6 @@ A list of curated links
 📜 - http://the-echoplex.net/flexyboxes/ (Flex playground & code generator)
 
 📜 - https://www.html5rocks.com/en/tutorials/responsive/picture-element/ (HTML Picture tag)
-
-
-### 0.5 CSS components & layouts
-
-📜 - https://bennettfeely.com/clippy (Clipping tool)
-
-📜 - https://codepen.io/WebDevSimplified/pen/BaNMMdN (CSS Tooltip)
-
-📜 - https://1linelayouts.glitch.me/ (Grid layouts)
-
-📜 - https://codepen.io/chriscoyier/pen/xBmYJN (Fluid grid layout)
-
-📜 - https://philipwalton.github.io/solved-by-flexbox/ (Some layouts)
-
-📜 - https://gridbyexample.com/ (Layouts)
-
-
 
 ---
 
