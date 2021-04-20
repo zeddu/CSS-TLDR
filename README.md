@@ -10,7 +10,7 @@ Made as a personal project to gather and organize concepts for learning.
 
 ## Table of Contents
 
-0. ## **[Tools](#0-Tools)**
+0. ## **[Links](#0-Links)**
     + 0.1 **[🟢 CSS Reset](#01-css-reset)**
     + 0.2 **[🟢 Typography](#02-typography)**
     + 0.3 **[🟢 Logos & images](#03-logos--images)**
@@ -31,7 +31,7 @@ Made as a personal project to gather and organize concepts for learning.
 
 ---
 
-# 0 Tools
+# 0 Links
 
 A list of curated links
 
@@ -99,7 +99,7 @@ A list of curated links
 
 
 
-**[⬆ Back to Top](#tools)**
+**[⬆ Back to Top](#links)**
 
 
 # 1 Syntax
@@ -145,7 +145,7 @@ body {
 
 ---
 
-**[⬆ Back to Top](#tools)**
+**[⬆ Back to Top](#link)**
 
 ## 1.2 Visual & display
 
@@ -164,7 +164,7 @@ The columns property is a shorthand for: column-width & column-count
 
 ---
 
-**[⬆ Back to Top](#tools)**
+**[⬆ Back to Top](#links)**
 
 
 ### 1.3 Flex container
@@ -203,7 +203,7 @@ space-between | space-around;
 
 ---
 
-**[⬆ Back to Top](#tools)**
+**[⬆ Back to Top](#links)**
 
 
 ### 1.5 Grid container
@@ -302,7 +302,7 @@ A shorthand for setting all of the following properties in a single declaration:
 
 --- 
 
-**[⬆ Back to Top](#tools)**
+**[⬆ Back to Top](#links)**
 
 ### 1.6 Grid items
 
@@ -350,7 +350,7 @@ Gives an item a name so that it can be referenced by a template created with the
 
 ---
 
-**[⬆ Back to Top](#tools)**
+**[⬆ Back to Top](#links)**
 
 
 ### 1.7 Grid alignment properties
@@ -426,4 +426,4 @@ The first value sets align-self, the second value justify-self. If the second va
 
 ---
 
-**[⬆ Back to Top](#tools)**
+**[⬆ Back to Top](#links)**
