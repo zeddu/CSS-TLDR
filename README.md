@@ -11,15 +11,15 @@ Made as a personal project to gather and organize concepts for learning.
 ## Table of Contents
 
 0. ## **[Tools](#0-Tools)**
-    + 0.1 **[🟢 Font & text properties](#01-font--text-properties)**
-    + 0.2 **[🟢 Background](#02-background)**
-    + 0.3 **[🟢 Margin & padding (Box model)](#03-margin--padding-box-model)**
-    + 0.4 **[🟢 Positioning](#04-positioning)**
-    + 0.5 **[🟢 Border](#05-border)**
-    + 0.6 **[🟢 Height & width](#06-height--width)**
-    + 0.7 **[🟢 Columns](#07-Columns)**
-    + 0.8 **[🟢 Float](#08-float)**
-    + 0.9 **[🟢 Display](#09-display)**
+    + 0.1 **[🟢 CSS Reset](#01-css-reset)**
+    + 0.2 **[🟢 Typography](#02-typography)**
+    + 0.3 **[🟢 Logos & images](#03-logos--images)**
+    + 0.4 **[🟢 Information & guides](#04-information--guides)**
+    + 0.5 **[🟢 CSS components & layouts](#05-css-components--layouts)**
+    + 0.6 **[🟢 z](#06-height--width)**
+    + 0.7 **[🟢 z](#07-Columns)**
+    + 0.8 **[🟢 z](#08-float)**
+    + 0.9 **[🟢 z](#09-display)**
  
  
  1. ## **[Syntax](#1-flexbox)**
@@ -42,36 +42,49 @@ Made as a personal project to gather and organize concepts for learning.
 
 # 0 Tools
 
+### 0.1 CSS Reset
+
 📜 - https://meyerweb.com/eric/tools/css/reset/ (CSS Reset)
 
 📜 - https://necolas.github.io/normalize.css/ (CSS Normalize)
 
+### 0.2 Typography
+
 📜 - https://type-scale.com/ (Typescale)
 
-📜 - https://bennettfeely.com/clippy (Clipping)
+
+### 0.3 Logos & images
 
 📜 - https://responsivebreakpoints.com/ (Generate image breakpoints)
 
 📜 - https://svgbackgrounds.com/ (SVG's)
 
-📜 - https://1linelayouts.glitch.me/ (Grid layouts)
 
-📜 - https://codepen.io/WebDevSimplified/pen/BaNMMdN (CSS Tooltip)
+
+### 0.4 Information & guides
+
+📜 - https://bitsofco.de/the-background-properties/ (Background properties)
 
 📜 - https://grid.malven.co/ (Grid cheat sheet)
 
 📜 - https://flexbox.malven.co/ (Flexbox cheat sheet)
 
 
-📜 - https://codepen.io/chriscoyier/pen/xBmYJN (Fluid grid layout)
+### 0.5 CSS components & layouts
 
-📜 - https://bitsofco.de/the-background-properties/ (Background properties)
+📜 - https://bennettfeely.com/clippy (Clipping)
+
+📜 - https://codepen.io/WebDevSimplified/pen/BaNMMdN (CSS Tooltip)
+
+📜 - https://1linelayouts.glitch.me/ (Grid layouts)
+
+📜 - https://codepen.io/chriscoyier/pen/xBmYJN (Fluid grid layout)
 
 ---
 
 
 
-**[⬆ Back to Top](#common-properties)**
+**[⬆ Back to Top](#tools)**
 
 
 # 1 Syntax
@@ -113,8 +126,6 @@ body {
 `object-fit` - fill | contain | cover | scale-down | none | initial | inherit;
 
 `object-position` - x/y coordinates
-
-![](https://css-tricks.com/wp-content/uploads/2015/02/cover-and-contain.jpg)
 
 ---
 
@@ -220,11 +231,11 @@ space-between | space-around;
 `grid-template-areas` -  List of names of areas.
 
 ```css
- .class1 {
+ .item {
  grid-area: header;
 }
 
-.wrapper {
+.grid {
  grid-template-columns: 1fr 3fr;
  grid-template-rows: auto;
  grid-template-areas:
