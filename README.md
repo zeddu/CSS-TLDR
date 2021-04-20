@@ -137,9 +137,6 @@ body {
 ## Visual & display
 
 
-
-![](https://ishadeed.com/assets/uncommon-css/column-rule.png)
-
 `columns` - auto | column-width column-count | initial | inherit
 
 The columns property is a shorthand for: column-width & column-count
@@ -148,7 +145,7 @@ The columns property is a shorthand for: column-width & column-count
 
 `clear` - none | left | right | both | initial | inherit
 
-📜 - https://www.w3schools.com/howto/howto_css_clearfix.asp
+📜 - https://www.w3schools.com/howto/howto_css_clearfix.asp (Float clearfix)
 
 `display` - none | inline | block | inline-block | flex | grid
 
@@ -158,9 +155,6 @@ The columns property is a shorthand for: column-width & column-count
 ## Flexbox
 
 📜 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-![](https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg)
-
 
 
 ### Parent (Flex Container)
