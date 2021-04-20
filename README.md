@@ -99,7 +99,7 @@ A list of curated links
 
 
 
-**[⬆ Back to Top](#CSS---TLDR-)**
+**[⬆ Back to Top](#CSS---TLDR)**
 
 
 # 1 Syntax
@@ -145,7 +145,7 @@ body {
 
 ---
 
-**[⬆ Back to Top](#CSS---TLDR-)**
+**[⬆ Back to Top](#CSS---TLDR)**
 
 ## 1.2 Visual & display
 
@@ -164,7 +164,7 @@ The columns property is a shorthand for: column-width & column-count
 
 ---
 
-**[⬆ Back to Top](#CSS---TLDR-)**
+**[⬆ Back to Top](#CSS---TLDR)**
 
 
 ### 1.3 Flex container
@@ -203,7 +203,7 @@ space-between | space-around;
 
 ---
 
-**[⬆ Back to Top](#CSS---TLDR-)**
+**[⬆ Back to Top](#CSS---TLDR)**
 
 
 ### 1.5 Grid container
@@ -302,7 +302,7 @@ A shorthand for setting all of the following properties in a single declaration:
 
 --- 
 
-**[⬆ Back to Top](#CSS---TLDR-)**
+**[⬆ Back to Top](#CSS---TLDR)**
 
 ### 1.6 Grid items
 
@@ -350,7 +350,7 @@ Gives an item a name so that it can be referenced by a template created with the
 
 ---
 
-**[⬆ Back to Top](#CSS---TLDR-)**
+**[⬆ Back to Top](#CSS---TLDR)**
 
 
 ### 1.7 Grid alignment properties
@@ -426,4 +426,4 @@ The first value sets align-self, the second value justify-self. If the second va
 
 ---
 
-**[⬆ Back to Top](#CSS---TLDR-)**
+**[⬆ Back to Top](#CSS---TLDR)**
