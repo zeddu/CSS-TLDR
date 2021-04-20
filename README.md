@@ -10,7 +10,7 @@ Made as a personal project to gather and organize concepts for learning.
 
 ## Table of Contents
 
-0. ## **[Common properties](#0-common-properties)**
+0. ## **[Tools](#0-Tools)**
     + 0.1 **[🟢 Font & text properties](#01-font--text-properties)**
     + 0.2 **[🟢 Background](#02-background)**
     + 0.3 **[🟢 Margin & padding (Box model)](#03-margin--padding-box-model)**
@@ -22,32 +22,18 @@ Made as a personal project to gather and organize concepts for learning.
     + 0.9 **[🟢 Display](#09-display)**
  
  
- 1. ## **[Flexbox](#1-flexbox)**
-    + 1.1 **[🟢 Basics & terminology](#11-basics--terminology)**
-    + 1.2 **[🟢 Flex-direction](#12-flex-direction)**
-    + 1.3 **[🟢 Justify-content](#13-justify-content)**
-    + 1.4 **[🟢 Align-items](#14-align-items)**
-    + 1.5 **[🟢 Flex-wrap](#15-flex-wrap)**
-    + 1.6 **[🟢 Flex-flow](#16-flex--flow)**
-    + 1.7 **[🟢 Align-content](#17-align-content)**
-    + 1.8 **[🟢 Order](#18-order)**
-    + 1.9 **[🟢 Flex-grow](#19-flex-grow)**
-    + 1.10 **[🟢 Flex-shrink](#110-flex-shrink)**
-    + 1.11 **[🟢 Flex-basis](#111-flex-basis)**
-    + 1.12 **[🟢 Align-self](#112-align-self)**
-    + 1.13 **[🟢 Flex](#113-flex)**
-    + 1.14 **[🟢 Flex overview](#114-flex-overview)**
+ 1. ## **[Syntax](#1-flexbox)**
+    + 1.1 **[🟢 Background & images](#11-basics--terminology)**
+    + 1.2 **[🟢 Visual & display](#12-flex-direction)**
+    + 1.3 **[🟢 Flexbox container](#13-justify-content)**
+    + 1.4 **[🟢 Flex items](#14-align-items)**
+    + 1.5 **[🟢 Grid container](#15-flex-wrap)**
+    + 1.6 **[🟢 Grid items](#16-flex--flow)**
+    + 1.7 **[🟢 Grid alignment](#17-align-content)**
+    + 1.8 **[🟢 z](#18-order)**
+    + 1.9 **[🟢 z](#19-flex-grow)**
 
-2. ## **[Grid](#2-grid)**
-    + 2.1 **[🟢 Grid display](#21-grid-display)**
-    + 2.2 **[🟢 Grid container properties](#22-grid-container-properties)**
-    + 2.3 **[🟢 Grid gap properties](#23-grid-gap-properties)**
-    + 2.4 **[🟢 Grid alignment properties](#24-grid-alignment-properties)**
-    + 2.5 **[🟢 Grid items properties](#25-grid-items-properties)**
-    + 2.6 **[🟢 Grid items alignment properties](#26-grid-items-alignment-properties)**
-    + 2.7 **[🟢 Fluid columns snippet](#27-fluid-columns-snippet)**
-    + 2.8 **[🟢 Layouts](#28-layouts)**
-    + 2.9 **[🟢 Grid overview & layouts](#29-grid-overview--layouts)**
+
 
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -158,7 +144,7 @@ The columns property is a shorthand for: column-width & column-count
 📜 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 
-### Parent (Flex Container)
+### Flex container properties (Parent)
 
 `display` - flex | inline-flex;
 
@@ -178,7 +164,7 @@ stretch;
 space-between | space-around;
 
 
-### Children (Flex Items)
+### Flex items (Children)
 
 `order` - integer;
 
@@ -201,7 +187,7 @@ space-between | space-around;
 📜 - https://css-tricks.com/snippets/css/complete-guide-grid
 
 
-### Grid properties - Parent (Grid Container)
+### Grid container properties - (Parent)
 
 `display` - grid | inline-grid;
 
@@ -299,7 +285,7 @@ A shorthand for setting all of the following properties in a single declaration:
 
 **[⬆ Back to Top](#grid)**
 
-### Grid item properties - Children (Grid items)
+### Grid item properties (children)
 
 
 `grid-column-start`
