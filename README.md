@@ -54,60 +54,46 @@ Made as a personal project to gather and organize concepts for learning.
 
 ---
 
-# 0 Common properties 
+# 0 Tools
+
+📜 - https://meyerweb.com/eric/tools/css/reset/ (CSS Reset)
+
+📜 - https://necolas.github.io/normalize.css/ (CSS Normalize)
+
+📜 - https://type-scale.com/ (Typescale)
+
+📜 - https://bennettfeely.com/clippy (Clipping)
+
+📜 - https://responsivebreakpoints.com/ (Generate image breakpoints)
+
+📜 - https://svgbackgrounds.com/ (SVG's)
+
+📜 - https://1linelayouts.glitch.me/ (Grid layouts)
+
+📜 - https://codepen.io/WebDevSimplified/pen/BaNMMdN (CSS Tooltip)
+
+📜 - https://grid.malven.co/ (Grid cheat sheet)
+
+📜 - https://flexbox.malven.co/ (Flexbox cheat sheet)
 
 
-📜 - https://meyerweb.com/eric/tools/css/reset/
+📜 - https://codepen.io/chriscoyier/pen/xBmYJN (Fluid grid layout)
 
-📜 - https://necolas.github.io/normalize.css/
-
-📜 - https://type-scale.com/
-
-📜 - https://bennettfeely.com/clippy
-
-📜 - https://responsivebreakpoints.com/
-
-📜 - https://svgbackgrounds.com/
-
-
-**[⬆ Back to Top](#common-properties)**
-
-
-## 0.1 Font & text properties
-
-`color` - #RRGGBB (Red, Green, Blue hex values)
-
-`font-size` - px | em | rem
-
-`font-style` - 	normal | italic | oblique
-
-`font-weight` - normal | bold | 100 | 400 | 700
-
-`font-family` - "Roboto", sans-serif
-
-`text-align` - 	left | right | center | justify
-
-`text-decoration` - none | underline | overline | line-through | blink | inherit
-
-`text-transformation` - none | capitalize | uppercase | lowercase
-
-`list-style` - none | list-style-type || list-style-position || list-style-image
-
-`line-height` - px etc.
-
-`letter-spacing` - px etc.
-
-`cursor` - pointer | grabbing | copy | crosshair | many more..
-
-**[⬆ Back to Top](#common-properties)**
-
-## 0.2 Background
-
-📜 - https://bitsofco.de/the-background-properties/
+📜 - https://bitsofco.de/the-background-properties/ (Background properties)
 
 ---
 
-`background` - The background property is a shorthand property for other properties:
+
+
+**[⬆ Back to Top](#common-properties)**
+
+
+# 1 Syntax
+
+
+## Background & images
+
+
 
 ```css
 body {
@@ -132,476 +118,143 @@ body {
 
 `background-attachment` - scroll | fixed | local | initial | inherit
 
----
-
-
-
-![](https://css-tricks.com/wp-content/uploads/2015/02/cover-and-contain.jpg)
-
-
-
-**[⬆ Back to Top](#common-properties)**
-
-
-## 0.3 Margin & padding (Box model)
-
-![](https://zellwk.com/images/2013/05/box-model.jpg)
-
-`margin` - px | em | rem | % | auto | initial | inherit
-
-`padding` - px | em | rem | % | auto | initial | inherit
-
-```css
-div {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    margin-left: 10px
-}
-```
-
-**[⬆ Back to Top](#common-properties)**
-
-
-## 0.4 Positioning
-
-> ![](https://www.webideasole.com/wp-content/uploads/2019/02/css_positions-1024x349.png)
-> Static, relative & absolute
-
-`top` `right` `bottom` `left` - auto | px/em/rem | % | initial | inherit
-
-`position` - static | absolute | fixed | relative | sticky | initial | inherit
-
-- static - Default value. Elements render in order, as they appear in the document flow
-
-- absolute - The element is positioned relative to its first positioned (not static) ancestor element
-
-- fixed	- The element is positioned relative to the browser window
-
-- relative - The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
-
-- sticky - The element is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. 
-
-- initial - Sets this property to its default value.
-
-- inherit - Inherits this property from its parent element.
-
-**[⬆ Back to Top](#common-properties)**
-
-
-## 0.5 Border
-
-![](https://s3.amazonaws.com/webucator-how-tos/2304.png)
-
-`border` - 
-
-```css
-div {
-    border: 1px solid black;
-    /* border width, style and color */
-}
-```
-
-The border property is a shorthand property for:
-
-`border-width`
-
-`border-style` (required)
-
-`border-color`
-
-**[⬆ Back to Top](#common-properties)**
-
-
-
-## 0.6 Height & width
-
-![](https://blogs.igalia.com/mrego/files/2018/08/percent-definite-size.svg)
-
 `width` & `height` - px | %
 
 `min-width` & `min-height` - Defines the minimum width/height of an element
 
 `top` `right` `bottom` `left` - px | %
 
-```css
-img {
-    max-width: 100%;
-    height: auto;
-}
-```
+`object-fit` - fill | contain | cover | scale-down | none | initial | inherit;
 
-**[⬆ Back to Top](#common-properties)**
+`object-position` - x/y coordinates
 
-
-## 0.7 Columns
-
-`columns` - auto | column-width column-count | initial | inherit
-
-![](https://ishadeed.com/assets/uncommon-css/column-rule.png)
+![](https://css-tricks.com/wp-content/uploads/2015/02/cover-and-contain.jpg)
 
 ---
 
-The columns property is a shorthand property for:
-
-- column-width
-
-- column-count
-
-The column-gap property specifies the gap between the columns.
-
-```cs
-div {
-  column-gap: 40px;
-}
-```
 
 
-**[⬆ Back to Top](#common-properties)**
+## Visual & display
 
 
-## 0.8 Float
+
+![](https://ishadeed.com/assets/uncommon-css/column-rule.png)
+
+`columns` - auto | column-width column-count | initial | inherit
+
+The columns property is a shorthand for: column-width & column-count
 
 `float` - none | left | right | initial | inherit
 
 `clear` - none | left | right | both | initial | inherit
 
-![](https://cdn-images-1.medium.com/fit/t/1600/480/1*CFwJ6lMQMOi4Oy7L8Mn17g.png)
-
----
-
-- The CSS `float` property specifies how an element should float.
-
-- The CSS `clear` property specifies what elements can float beside the cleared element and on which side.
-
-    - none - Allows floating elements on both sides. This is default
-    - left - No floating elements allowed on the left side
-    - right- No floating elements allowed on the right side
-    - both - No floating elements allowed on either the left or the right side
-    - inherit - The element inherits the clear value of its parent
-
 📜 - https://www.w3schools.com/howto/howto_css_clearfix.asp
-
-
-
-**[⬆ Back to Top](#common-properties)**
-
-
-## 0.9 Display
 
 `display` - none | inline | block | inline-block | flex | grid
 
-![](https://lh3.googleusercontent.com/proxy/8lKSOEuv4rfXhi2bsgF2N_uSnhyKWItzVwcZDEji4NiDTZ-nX3OAgdg6g6dz_k7odYqt-TnJArJ-abIT0t3Lsw32Myq97VFzJrJZsGRp5Nifz6oQJmd0qZ-KRzhEiKafidTJtPJ_ZjpLDxxgXAhegrvRSfAi)
-
-![](https://miro.medium.com/max/871/1*kI78qZQjw_ax1kJo4lPOcw.png)
+---
 
 
-
-```css
-div {
-    display: block;
-    display: inline-block;
-    display: inline;
-    display: flex;
-    display: grid;
-    display: none;
-}
-```
-
-**[⬆ Back to Top](#common-properties)**
-
-
-# 1 Flexbox
+## Flexbox
 
 📜 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-```css
-.container {
-display: flex;
-}
-```
-
-![](https://darekkay.com/assets/images/covers/flexbox-cheatsheet.png)
-
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.1 Basics & terminology
-
-Since `flexbox` is a whole module and not a single property, it involves a lot of things including its whole set of properties. Some of them are meant to be set on the container (parent element, known as “flex container”) whereas the others are meant to be set on the children (said “flex items”).
-
 ![](https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg)
+
+
+
+### Parent (Flex Container)
+
+`display` - flex | inline-flex;
+
+`flex-direction` - row | row-reverse | column | column-reverse;
+
+`flex-wrap` - wrap | nowrap | wrap-reverse;
+
+`flex-flow` - (shorthand for flex-direction and flex-wrap)
+
+`justify-content` - (main axis): flex-start | flex-end | center | space-between | space-around |
+space-evenly;
+
+`align-items` - (cross axis - adjust to individual sizes): flex-start | flex-end | center | baseline |
+stretch;
+
+`align-content` - (cross axis - adjust to largest item): flex-start | flex-end | center | stretch |
+space-between | space-around;
+
+
+### Children (Flex Items)
+
+`order` - integer;
+
+`flex-grow` - number;
+
+`flex-shrink` - number;
+
+`flex-basis` - length | auto;
+
+`flex` - shorthand for grow, shrink, and basis (default: 0 1 auto)
+
+align-self` - overrides alignment set on parent
 
 ---
 
-- main axis – The main axis of a flex container is the primary axis along which flex items are laid out. Beware, it is not necessarily horizontal; it depends on the flex-direction property (see below).
 
-- main-start | main-end – The flex items are placed within the container starting from main-start and going to main-end.
-
-- main size – A flex item’s width or height, whichever is in the main dimension, is the item’s main size. The flex item’s main size property is either the ‘width’ or ‘height’ property, whichever is in the main dimension.
-
-- cross axis – The axis perpendicular to the main axis is called the cross axis. Its direction depends on the main axis direction.
-
-- cross-start | cross-end – Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.
-
-- cross size – The width or height of a flex item, whichever is in the cross dimension, is the item’s cross size. The cross size property is whichever of ‘width’ or ‘height’ that is in the cross dimension.
-
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.2 Flex-direction
-
- `flex-direction` - row | row-reverse | column | column-reverse
-
-![](https://samanthaming.gumlet.io/flexbox30/9-flex-direction.jpg.gz)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-
-## 1.3 Justify-content
-
-`justify-content` - flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right
-
-This defines the alignment along the main axis.
-
-![](https://miro.medium.com/max/434/1*iigDGiNFBOUVJQ_07C1B2g.png)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.4 Align-items
-
-`align-items` - stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end
-
-This defines the default behavior for how flex items are laid out along the cross axis on the current line.
-
-![](https://notes.anjagusev.com/static/8a7afe991a11023398a91abddd2567dc/b9e4f/ScreenShot2019-03-22at174821.png)
-
-**[⬆ Back to Top](#flexbox)**
-
-## 1.5 Flex-wrap
-
-`flex-wrap` - nowrap | wrap | wrap-reverse
-
-- `nowrap` (default) - all flex items will be on one line
-
-- `wrap` - flex items will wrap onto multiple lines, from top to bottom.
-
-- `wrap-reverse` - flex items will wrap onto multiple lines from bottom to top.
-
-By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.
-
-![](https://samanthaming.gumlet.io/flexbox30/10-flex-wrap.jpg.gz)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.6 Flex-flow
-
-`flex-flow` - row | row-reverse | column | column-reverse | wrap | nowrap | wrap-reverse
-
-This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. The default value is row nowrap.
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1592610517892/2LRbRRnu_.png)
-
-![](https://miro.medium.com/max/3160/1*xAPNrU9sKijsJnMJOTyUBA.png)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.7 Align-content
-
-`align-content` - flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline
-
-This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
-
-![](https://on.notist.cloud/slides/deck501/large-30.png)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.8 Order
-
-`order` - number
-
-```css
-.item {
-  order: 5; /* default is 0 */
-}
-```
-
-By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
-
-![](https://coursesweb.net/addons/css/flexbox-order.jpg)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.9 Flex-grow
-
-`flex-grow` - number (this is a relational value)
-
-This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
-
-If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least).
-
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8WgTeGfN81LxapVOnt9ufYrzGowZ9PeVmaw&usqp=CAU)
-
-![](https://ishadeed.com/assets/flex-css/flex-grow-1.png)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.10 Flex-shrink
-
-`flex-shrink` - number (relational value). Negative numbers are invalid.
-
-This defines the ability for a flex item to shrink if necessary.
-
-![](https://samanthaming.gumlet.io/flexbox30/23-flex-shrink.jpg.gz)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.11 Flex-basis
-
-`flex-basis` - 0 | auto
-
-This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means “look at my width or height property”.
-
-![](https://www.w3.org/TR/css-flexbox-1/images/rel-vs-abs-flex.svg)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.12 Align-self
-
-`align-self` - auto | flex-start | flex-end | center | baseline | stretch
-
-This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
-
-![](https://miro.medium.com/max/1072/1*uUfr2oc8xRg4S1YWnRiSDQ.png)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.13 Flex
-
-`flex` (Default: 0 1 auto) - none | flex-grow flex-shrink flex-basis
-
-This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. The default is 0 1 auto, but if you set it with a single number value, it’s like 1 0.
-
-It is recommended that you use this shorthand property rather than set the individual properties. The shorthand sets the other values intelligently.
-
-![](https://samanthaming.gumlet.io/flexbox30/27-flex.jpg.gz?format=auto)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-## 1.14 Flex overview
-
-
-![](https://samanthaming.gumlet.io/flexbox30/30-flexbox-cheatsheet.jpg.gz?format=auto)
-
-![](https://res.cloudinary.com/practicaldev/image/fetch/s--A8IfWktx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/prq36s69xfan04a3ah28.png)
-
-![](https://miro.medium.com/max/871/1*kI78qZQjw_ax1kJo4lPOcw.png)
-
-**[⬆ Back to Top](#flexbox)**
-
-
-# 2 Grid
+## Grid
 
 📜 - https://css-tricks.com/snippets/css/complete-guide-grid
 
-The element on which display: grid is applied. It’s the direct parent of all the grid items. In this example container is the grid container.
 
-```css
-.container {
-display: grid;
-}
-```
-![](https://codingthesmartway.com/wp-content/uploads/2017/12/01_CSS_Grid_Overview.png)
+### Grid properties - Parent (Grid Container)
 
-![](https://www.cssgridplayground.com/twitter-card.png)
-
-
-**[⬆ Back to Top](#grid)**
-
-
-## 2.1 Grid display
-
-`display` - grid | inline-grid
-
-Defines the element as a grid container and establishes a new grid formatting context for its contents.
-
-
-![](https://mlsqcqtlfv1d.i.optimole.com/K2Tg0JY-GoqWFsJe/w:828/h:359/q:auto/https://sbsharma.com/wp-content/uploads/2020/05/inline-vs-grid-css-grid.png)
-
-
-
-
-**[⬆ Back to Top](#grid)**
-
-## 2.2 Grid container properties
-
-
-`grid-template-columns`
-
-`grid-template-rows`
-
-Defines the columns and rows of the grid with a space-separated list of values. The values represent the track size, and the space between them represents the grid line.
-
-```css
-.container {
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 1fr auto;
-}
-```
+`display` - grid | inline-grid;
 
 ---
 
-`grid-template-areas`
-
-Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.
+`grid-template-columns` & `grid-template-rows` - track-size | repeat (track-size: length, %, fr, auto)
 
 ```css
-.container {
+ .myClass {
+ grid-template-rows: 1fr 2fr 1fr;
+ grid-template-columns: 50% 25vh auto;
+}
+```
+
+`grid-template` - Shorthand for grid-template-rows, grid-template-columns, and grid-template-areas in
+1 declaration.
+
+```css
+.grid-container {
   display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
+  grid-template: 150px / auto auto auto;
 }
 ```
 
 
 ---
 
-`grid-template`
 
-A shorthand for setting grid-template-rows, grid-template-columns, and grid-template-areas in a single declaration.
+
+`grid-template-areas` -  List of names of areas.
 
 ```css
-.container {
-  grid-template:
-    [row1-start] "header header header" 25px [row1-end]
-    [row2-start] "footer footer footer" 25px [row2-end]
-    / auto 50px auto;
+ .class1 {
+ grid-area: header;
+}
+
+.wrapper {
+ grid-template-columns: 1fr 3fr;
+ grid-template-rows: auto;
+ grid-template-areas:
+ "header header header header"
+ "aside . article article";
 }
 ```
 
-
 ---
 
-`grid-auto-columns`
+`grid-auto-columns` & `grid-auto-rows`
 
-`grid-auto-rows`
 
 Specifies the size of any auto-generated grid tracks (aka implicit grid tracks). Implicit tracks get created when there are more grid items than cells in the grid or when a grid item is placed outside of the explicit grid.
 
@@ -610,8 +263,6 @@ Specifies the size of any auto-generated grid tracks (aka implicit grid tracks).
   grid-auto-columns: 60px;
 }
 ```
-
----
 
 `grid-auto-flow`
 
@@ -625,7 +276,8 @@ If you have grid items that you don’t explicitly place on the grid, the auto-p
 
 ---
 
-`grid`
+`grid` - shorthand for all of the above properties.
+
 
 A shorthand for setting all of the following properties in a single declaration: grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow 
 
@@ -640,67 +292,64 @@ A shorthand for setting all of the following properties in a single declaration:
 }
 ```
 
-```css
-.container {
-  grid: auto-flow / 200px 1fr;
-}
 
-.container {
-  grid-auto-flow: row;
-  grid-template-columns: 200px 1fr;
+--- 
+
+`grid-gap` or `grid-column-gap` & `grid-row-gap` - gaps
+
+`gap` or `column-gap` & `row-gap` - gaps
+
+--- 
+
+### Grid item properties - Children (Grid items)
+
+
+`grid-column-start`
+`grid-column-end`
+`grid-row-start`
+`grid-row-end`
+
+Determines a grid item’s location within the grid by referring to specific grid lines. grid-column-start/grid-row-start is the line where the item begins, and grid-column-end/grid-row-end is the line where the item ends.
+
+```css
+.item-a {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
 }
 ```
 
 ---
 
-**[⬆ Back to Top](#grid)**
+`grid-column` & `grid-row`
 
-
-
-## 2.3 Grid gap properties
-
-
-`column-gap`
-
-`row-gap`
-
-`grid-column-gap`
-
-`grid-row-gap`
-
-Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the columns/rows.
+Shorthand for grid-column-start + grid-column-end, and grid-row-start + grid-row-end, respectively.
 
 ```css
-.container {
-  grid-template-columns: 100px 50px 100px;
-  grid-template-rows: 80px auto 80px; 
-  column-gap: 10px;
-  row-gap: 15px;
+.item-c {
+  grid-column: 3 / span 2;
+  grid-row: third-line / 4;
 }
 ```
 
 ---
 
-`gap`
+`grid-area`
 
-`grid-gap`
-
-A shorthand for row-gap and column-gap
+Gives an item a name so that it can be referenced by a template created with the grid-template-areas property. Alternatively, this property can be used as an even shorter shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end.
 
 ```css
-.container {
-  grid-template-columns: 100px 50px 100px;
-  grid-template-rows: 80px auto 80px; 
-  gap: 15px 10px;
+.item-d {
+  grid-area: header;
 }
 ```
 
+---
 
-**[⬆ Back to Top](#grid)**
+### Grid alignment properties
 
-## 2.4 Grid alignment properties
 
- 
 `justify-items` - start | end | center | stretch
 
 Aligns grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis). This value applies to all grid items inside the container.
@@ -736,66 +385,14 @@ This property aligns the grid along the block (column) axis (as opposed to justi
 
 place-content sets both the align-content and justify-content properties in a single declaration.
 
+---
 
-**[⬆ Back to Top](#grid)**
-
-## 2.5 Grid items properties
-
-> Note: float, display: inline-block, display: table-cell, vertical-align and column-* properties have no effect on a grid item.
-
-
-`grid-column-start`
-`grid-column-end`
-`grid-row-start`
-`grid-row-end`
-
-Determines a grid item’s location within the grid by referring to specific grid lines. grid-column-start/grid-row-start is the line where the item begins, and grid-column-end/grid-row-end is the line where the item ends.
-
-```css
-.item-a {
-  grid-column-start: 2;
-  grid-column-end: five;
-  grid-row-start: row1-start;
-  grid-row-end: 3;
-}
-```
+`align-self` - start | end | center | stretch
 
 ---
 
-`grid-column`
+`justify-self` - start | end | center | stretch
 
-`grid-row`
-
-Shorthand for grid-column-start + grid-column-end, and grid-row-start + grid-row-end, respectively.
-
-```css
-.item-c {
-  grid-column: 3 / span 2;
-  grid-row: third-line / 4;
-}
-```
-
----
-
-`grid-area`
-
-Gives an item a name so that it can be referenced by a template created with the grid-template-areas property. Alternatively, this property can be used as an even shorter shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end.
-
-```css
-.item-d {
-  grid-area: header;
-}
-```
-
-
-
-
-**[⬆ Back to Top](#grid)**
-
-## 2.6 Grid items alignment properties
-
-
-`justify-self` - tart | end | center | stretch
 
 Aligns a grid item inside a cell along the inline (row) axis (as opposed to align-self which aligns along the block (column) axis). This value applies to a grid item inside a single cell.
 
@@ -804,18 +401,6 @@ Aligns a grid item inside a cell along the inline (row) axis (as opposed to alig
     justify-self: start;
     justify-self: center;
     justify-self: end;
-}
-```
-
----
-
-`align-self` - start | end | center | stretch
-
-Aligns a grid item inside a cell along the block (column) axis (as opposed to justify-self which aligns along the inline (row) axis). This value applies to the content inside a single grid item.
-
-```css
-.item-a {
-  align-self: start;
 }
 ```
 
@@ -833,64 +418,13 @@ The first value sets align-self, the second value justify-self. If the second va
 }
 ```
 
-**[⬆ Back to Top](#grid)**
-
-
-
-## 2.7 Fluid columns snippet
-
-📜 - https://codepen.io/chriscoyier/pen/xBmYJN
-
-
-```css
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* This is better for small screens, once min() is better supported */
-  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
-  grid-gap: 1rem;
-  /* This is the standardized property now, but has slightly less support */
-  /* gap: 1rem */
-}
-```
-
-
-**[⬆ Back to Top](#grid)**
-
-## 2.8 Layouts
-
-![](https://cdn.codecoda.com/themes/user/site/default/asset/img/blog/CSS-layout-1.png)
-
 ---
 
-![](https://cdn.codecoda.com/themes/user/site/default/asset/img/blog/CSS-layout-4.png)
-
 **[⬆ Back to Top](#grid)**
 
 
 
 
-## 2.9 Grid overview & layouts
-
-📜 - https://grid.malven.co/
-
-📜 - https://flexbox.malven.co/
-
-📜 - https://codepen.io/chriscoyier/pen/xBmYJN
-
-![](https://devopedia.org/images/article/179/2142.1559055827.jpg)
-
----
 
 
 
-
-
-![](https://cdn.mos.cms.futurecdn.net/7vpUPMSbPfhxiUNYj5XnE6.jpg)
-
-![](https://masteringionic.com/perch/resources/tutorials/ionic-css-grid-non-desktop-views.png)
-
-![](https://i.ytimg.com/vi/68O6eOGAGqA/maxresdefault.jpg)
-
-
-**[⬆ Back to Top](#templates)**
