@@ -30,9 +30,6 @@ Made as a personal project to gather and organize concepts for learning.
 
 
 
-
-**[⬆ Back to Top](#table-of-contents)**
-
 ---
 
 # 0 Tools
