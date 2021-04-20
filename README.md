@@ -16,22 +16,17 @@ Made as a personal project to gather and organize concepts for learning.
     + 0.3 **[🟢 Logos & images](#03-logos--images)**
     + 0.4 **[🟢 Information & guides](#04-information--guides)**
     + 0.5 **[🟢 CSS components & layouts](#05-css-components--layouts)**
-    + 0.6 **[🟢 z](#06-height--width)**
-    + 0.7 **[🟢 z](#07-Columns)**
-    + 0.8 **[🟢 z](#08-float)**
-    + 0.9 **[🟢 z](#09-display)**
+
  
  
- 1. ## **[Syntax](#1-flexbox)**
-    + 1.1 **[🟢 Background & images](#11-basics--terminology)**
-    + 1.2 **[🟢 Visual & display](#12-flex-direction)**
-    + 1.3 **[🟢 Flexbox container](#13-justify-content)**
-    + 1.4 **[🟢 Flex items](#14-align-items)**
-    + 1.5 **[🟢 Grid container](#15-flex-wrap)**
-    + 1.6 **[🟢 Grid items](#16-flex--flow)**
-    + 1.7 **[🟢 Grid alignment](#17-align-content)**
-    + 1.8 **[🟢 z](#18-order)**
-    + 1.9 **[🟢 z](#19-flex-grow)**
+ 1. ## **[Syntax](#1-syntax)**
+    + 1.1 **[🟢 Background & images](#11-background--images)**
+    + 1.2 **[🟢 Visual & display](#12-visual--display)**
+    + 1.3 **[🟢 Flex container](#13-flex-container)**
+    + 1.4 **[🟢 Flex items](#14-flex-items)**
+    + 1.5 **[🟢 Grid container](#15-grid-container)**
+    + 1.6 **[🟢 Grid items](#16-grid-items)**
+    + 1.7 **[🟢 Grid alignment properties](#17-grid-alignment-properties)**
 
 
 
@@ -41,6 +36,8 @@ Made as a personal project to gather and organize concepts for learning.
 ---
 
 # 0 Tools
+
+A list of curated links
 
 ### 0.1 CSS Reset
 
@@ -62,6 +59,8 @@ Made as a personal project to gather and organize concepts for learning.
 
 
 ### 0.4 Information & guides
+
+📜 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference (CSS Syntax)
 
 📜 - https://bitsofco.de/the-background-properties/ (Background properties)
 
@@ -89,8 +88,9 @@ Made as a personal project to gather and organize concepts for learning.
 
 # 1 Syntax
 
+📜 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 
-## Background & images
+## 1.1 Background & images
 
 
 
@@ -129,9 +129,9 @@ body {
 
 ---
 
+**[⬆ Back to Top](#tools)**
 
-
-## Visual & display
+## 1.2 Visual & display
 
 
 `columns` - auto | column-width column-count | initial | inherit
@@ -148,14 +148,10 @@ The columns property is a shorthand for: column-width & column-count
 
 ---
 
-**[⬆ Back to Top](#grid)**
-
-## Flexbox
-
-📜 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+**[⬆ Back to Top](#tools)**
 
 
-### Flex container properties (Parent)
+### 1.3 Flex container
 
 `display` - flex | inline-flex;
 
@@ -175,7 +171,7 @@ stretch;
 space-between | space-around;
 
 
-### Flex items (Children)
+### 1.4 Flex items
 
 `order` - integer;
 
@@ -191,14 +187,10 @@ space-between | space-around;
 
 ---
 
-**[⬆ Back to Top](#grid)**
-
-## Grid
-
-📜 - https://css-tricks.com/snippets/css/complete-guide-grid
+**[⬆ Back to Top](#tools)**
 
 
-### Grid container properties - (Parent)
+### 1.5 Grid container
 
 `display` - grid | inline-grid;
 
@@ -294,9 +286,9 @@ A shorthand for setting all of the following properties in a single declaration:
 
 --- 
 
-**[⬆ Back to Top](#grid)**
+**[⬆ Back to Top](#tools)**
 
-### Grid item properties (children)
+### 1.6 Grid items
 
 
 `grid-column-start`
@@ -342,10 +334,10 @@ Gives an item a name so that it can be referenced by a template created with the
 
 ---
 
-**[⬆ Back to Top](#grid)**
+**[⬆ Back to Top](#tools)**
 
 
-### Grid alignment properties
+### 1.7 Grid alignment properties
 
 
 `justify-items` - start | end | center | stretch
@@ -418,11 +410,4 @@ The first value sets align-self, the second value justify-self. If the second va
 
 ---
 
-**[⬆ Back to Top](#grid)**
-
-
-
-
-
-
-
+**[⬆ Back to Top](#tools)**
