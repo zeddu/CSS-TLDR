@@ -107,6 +107,15 @@ A list of curated links
 
 ### 0.7 Snippets
 
+```css
+/* Vanilla CSS imports. Like SASS partials however,
+every CSS file will be downloaded at request */
+@import url('CSS/reset.css');
+@import url('CSS/layout.css');
+@import url('CSS/typography.css');
+@import url('CSS/masthead.css');
+```
+
 
 ```css
 /* Center a div */
