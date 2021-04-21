@@ -221,6 +221,15 @@ transition: all 0.15s ease-out 0s;
 }
 ```
 
+```css
+/* 3 columns */
+.col-3 {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+gap: 1em;
+}
+```
+
 **[⬆ Back to Top](#CSS---TLDR)**
 
 
