@@ -189,6 +189,9 @@ background: lightblue;
 text-align: center;
 margin: 0 0 0 auto;
 /* or margin: auto*/
+
+line-height: 100vh;
+/* align text vertically to center*/
 }
 ```
 
