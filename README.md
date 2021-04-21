@@ -127,11 +127,28 @@ every CSS file will be downloaded at request */
 ```
 
 
-```css
+```scss
 /* Whitespace spacing */
 .any {
   margin: 10vw;
   padding: 10vw;
+}
+```
+
+```css
+/* Sass mixins - useful background */
+@mixin sectionPadding {
+padding: 60px 0;
+}
+
+@mixin fullImage {
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 0 0;
+}
+
+@mixin transition15 {
+transition: all 0.15s ease-out 0s;
 }
 ```
 
