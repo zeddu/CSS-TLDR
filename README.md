@@ -274,7 +274,7 @@ The columns property is a shorthand for: column-width & column-count
 **[⬆ Back to Top](#CSS---TLDR)**
 
 
-### 1.3 Flex container
+## 1.3 Flex container
 
 `display` - flex | inline-flex;
 
@@ -294,7 +294,7 @@ stretch;
 space-between | space-around;
 
 
-### 1.4 Flex items
+## 1.4 Flex items
 
 `order` - integer;
 
@@ -313,7 +313,7 @@ space-between | space-around;
 **[⬆ Back to Top](#CSS---TLDR)**
 
 
-### 1.5 Grid container
+## 1.5 Grid container
 
 `display` - grid | inline-grid;
 
@@ -403,7 +403,7 @@ space-between | space-around;
 
 **[⬆ Back to Top](#CSS---TLDR)**
 
-### 1.6 Grid items
+## 1.6 Grid items
 
 
 `grid-column-start`
@@ -446,7 +446,7 @@ space-between | space-around;
 **[⬆ Back to Top](#CSS---TLDR)**
 
 
-### 1.7 Grid alignment properties
+## 1.7 Grid alignment properties
 
 `justify-items` - start | end | center | stretch
 
