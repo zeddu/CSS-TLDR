@@ -19,6 +19,10 @@ Made as a personal project to gather and organize concepts for learning.
     + 0.6 **[🟢 Information & guides](#06-information--guides)**
     + 0.7 **[🟢 Snippets](#07-snippets)**
  
+0. ## **[Code](#0-Links)**
+    + 0.1 **[🟢 CSS Reset](#01-css-reset)**
+    + 0.2 **[🟢 Typography](#02-typography)**
+    + 0.3 **[🟢 Logos & images](#03-logos--images)**
  
  1. ## **[Syntax](#1-syntax)**
     + 1.1 **[🟢 Background & images](#11-background--images)**
@@ -106,6 +110,49 @@ A list of curated links
 ---
 
 ### 0.7 Snippets
+
+#### Fundamentals : 
+
+Color & contrast
+
+Whitespace
+
+Scale
+
+Visual hierarchy
+
+Typohraphy
+
+and all of them consistently
+
+- Good to seperate style rules from layout rules.
+
+- Don't use id's for styling. Specificity. Id's are ok for js hooks.
+
+```css
+/** SMACSS
+* 01 - Base: applies to HTML, no class/ID selectors
+* 02 - Layout: big page sections - .header, .sidebar, etc.
+* 03 - Module: encapsulated modeles, re-usable (variables)
+* 04 - State: overrides defaults - e.g. is-opened
+* 05 - Theme: optional, if theming needed
+* 06 - Improve: todo list, shame
+**/
+```
+
+```css
+/** Main
+* CH01 - Resets
+* CH02 - Globals
+* CH03 - Variables
+* CH04 - Typography
+* CH05 - Page Structure
+* CH06 - Header & Navigation
+* CH07 - Content * Media
+* CH08 - Footer
+* CH09 - Miscellaneous
+**/
+```
 
 ```css
 /* Initialize box-sizing */
@@ -316,9 +363,6 @@ space-between | space-around;
 
 `grid-auto-columns` & `grid-auto-rows`
 
-
-Specifies the size of any auto-generated grid tracks (aka implicit grid tracks). Implicit tracks get created when there are more grid items than cells in the grid or when a grid item is placed outside of the explicit grid.
-
 ```css
 .container {
   grid-auto-columns: 60px;
@@ -326,8 +370,6 @@ Specifies the size of any auto-generated grid tracks (aka implicit grid tracks).
 ```
 
 `grid-auto-flow`
-
-If you have grid items that you don’t explicitly place on the grid, the auto-placement algorithm kicks in to automatically place the items. This property controls how the auto-placement algorithm works.
 
 ```css
 .container {
@@ -338,9 +380,6 @@ If you have grid items that you don’t explicitly place on the grid, the auto-p
 ---
 
 `grid` - shorthand for all of the above properties.
-
-
-A shorthand for setting all of the following properties in a single declaration: grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow 
 
 ```css
 .container {
@@ -372,8 +411,6 @@ A shorthand for setting all of the following properties in a single declaration:
 `grid-row-start`
 `grid-row-end`
 
-Determines a grid item’s location within the grid by referring to specific grid lines. grid-column-start/grid-row-start is the line where the item begins, and grid-column-end/grid-row-end is the line where the item ends.
-
 ```css
 .item-a {
   grid-column-start: 2;
@@ -387,8 +424,6 @@ Determines a grid item’s location within the grid by referring to specific gri
 
 `grid-column` & `grid-row`
 
-Shorthand for grid-column-start + grid-column-end, and grid-row-start + grid-row-end, respectively.
-
 ```css
 .item-c {
   grid-column: 3 / span 2;
@@ -399,8 +434,6 @@ Shorthand for grid-column-start + grid-column-end, and grid-row-start + grid-row
 ---
 
 `grid-area`
-
-Gives an item a name so that it can be referenced by a template created with the grid-template-areas property. Alternatively, this property can be used as an even shorter shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end.
 
 ```css
 .item-d {
@@ -415,74 +448,23 @@ Gives an item a name so that it can be referenced by a template created with the
 
 ### 1.7 Grid alignment properties
 
-
 `justify-items` - start | end | center | stretch
-
-Aligns grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis). This value applies to all grid items inside the container.
-
----
 
 `align-items` - start | end | center | stretch
 
-Aligns grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis). This value applies to all grid items inside the container.
-
----
-
 `place-items` - align-items justify-items
-
-place-items sets both the align-items and justify-items properties in a single declaration.
-
----
 
 `justify-content` - start | end | center | stretch | space-around | space-between | space-evenly
 
-This property aligns the grid along the inline (row) axis (as opposed to align-content which aligns the grid along the block (column) axis).
-
----
-
-
-`align-content` - start | end | center | stretch | space-around | space-between | space-evenly
-
-This property aligns the grid along the block (column) axis (as opposed to justify-content which aligns the grid along the inline (row) axis).
-
----
+`align-content` - start | end | center | stretch | 
 
 `place-content` - align-content justify-content
 
-place-content sets both the align-content and justify-content properties in a single declaration.
-
----
-
 `align-self` - start | end | center | stretch
-
----
 
 `justify-self` - start | end | center | stretch
 
-
-Aligns a grid item inside a cell along the inline (row) axis (as opposed to align-self which aligns along the block (column) axis). This value applies to a grid item inside a single cell.
-
-```css
-.item-a {
-    justify-self: start;
-    justify-self: center;
-    justify-self: end;
-}
-```
-
----
-
 `place-self` - align-self justify-self
-
-place-self sets both the align-self and justify-self properties in a single declaration.
-
-The first value sets align-self, the second value justify-self. If the second value is omitted, the first value is assigned to both properties.
-
-```css
-.item-a {
-  place-self: center;
-}
-```
 
 ---
 
