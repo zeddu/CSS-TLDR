@@ -180,6 +180,18 @@ every CSS file will be downloaded at request */
 }
 ```
 
+```css
+/* Centering */
+div {
+width: 80%;
+height: 100vh;
+background: lightblue;
+text-align: center;
+margin: 0 0 0 auto;
+/* or margin: auto*/
+}
+```
+
 
 ```scss
 /* Whitespace spacing */
