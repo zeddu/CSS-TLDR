@@ -108,6 +108,13 @@ A list of curated links
 ### 0.7 Snippets
 
 ```css
+/* Initialize box-sizing */
+*, *:before, *after {
+box-sizing: border-box;
+}
+```
+
+```css
 /* Vanilla CSS imports. Like SASS partials however,
 every CSS file will be downloaded at request */
 @import url('CSS/reset.css');
